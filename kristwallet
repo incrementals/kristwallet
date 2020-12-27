@@ -46,7 +46,7 @@ local maxspace = ""
 local ar = 0
 local amt = 0
 local availability = 0
-local wallet, hud, update, settle, log, readconfig, checkdir, openwallet, makev2address
+local wallet, hud, update, settle, log, readconfig, checkdir, openwallet, makev2address, quicklinks
 
 local function split(inputstr, sep)
         if sep == nil then
@@ -731,6 +731,7 @@ function wallet()
       local recipient = read()
       if recipient == "self" then -- todo: make configurable
       	recipient = "kbvbd3beos" -- modifiable now if you want
+      end
       term.setCursorPos(33,6)
       log("Read recipient for transfer")
       local amount = read()
