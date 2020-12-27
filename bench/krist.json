@@ -5,7 +5,7 @@
 		{
 			"name": "kristwallet",
 			"description": "The second and most-used wallet for Krist",
-			"version": 1.0.17,
+			"version": 1.17,
 			"download": {
 				"kristwallet.lua": "github://incrementals/kristwallet/kristwallet",
 				"cleanup.lua": "github://incrementals/kristwallet/bench/cleanup.lua"
