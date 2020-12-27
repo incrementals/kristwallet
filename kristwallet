@@ -728,6 +728,8 @@ function wallet()
     if xPos >= 17 then
       term.setCursorPos(33,5)
       local recipient = read()
+      if recipient == "self" then -- todo: make configurable
+      	recipient = "kbvbd3beos" -- modifiable now if you want
       term.setCursorPos(33,6)
       log("Read recipient for transfer")
       local amount = read()
